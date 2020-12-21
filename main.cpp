@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlEngine>
 #include <QQmlContext>
+#include <QCursor>
 
 #include "datamodel.h"
 
@@ -12,6 +13,8 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QGuiApplication app(argc, argv);
+
+    QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
 
     qmlRegisterUncreatableType<DataModel>("com.druck.models", 1, 0, "DataModel", "DataModel is uncreatable type");
 

@@ -7,7 +7,7 @@ ApplicationWindow {
     width: 640
     height: 480
     visible: true
-    visibility: "FullScreen"
+    // visibility: "FullScreen"
     title: qsTr("Qt Quick Stack Application")
 
     header: ToolBar {
