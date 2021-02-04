@@ -21,7 +21,7 @@ Page {
             top: pageLabel.bottom
             left: pageLabel.left
         }
-        text: TheModelOne.salary
+        text: TheDataList.data[0].salary
     }
 
     Label {
@@ -30,7 +30,7 @@ Page {
             top: model1Label.bottom
             left: model1Label.left
         }
-        text: TheModelTwo.salary
+        text: TheDataList.data[1].salary
     }
 
     Button {
@@ -42,7 +42,7 @@ Page {
         text: "Increment 1"
 
         onClicked: {
-            TheModelOne.increment()
+            TheDataList.data[0].increment()
         }
     }
 
@@ -55,7 +55,7 @@ Page {
         text: "Increment 2"
 
         onClicked: {
-            TheModelTwo.increment()
+            TheDataList.data[1].increment()
         }
     }
 }
